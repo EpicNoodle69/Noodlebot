@@ -28,6 +28,7 @@ public class Punt extends JComponent {
         while (z == 0) {
         this.x = (int) (Math.random() * 400);
             this.y = (int) (Math.random() * 400);
+            if (x > 50 || y < 350) {
                 z++;
             }
         }
