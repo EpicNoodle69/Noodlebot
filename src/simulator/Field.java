@@ -15,14 +15,14 @@ import javax.swing.JPanel;
  *
  * @author Wachtwoordloos
  */
-public class Veld extends JPanel {
+public class Field extends JPanel {
 
     private int sizeX;
     private int sizeY;
     private int puntId;
-    private ArrayList<Punt> punten;
+    private ArrayList<Point> punten;
 
-    public Veld() {
+    public Field() {
         this.sizeX = 400;
         this.sizeY = 400;
         this.setPreferredSize(new Dimension(sizeX, sizeY));
@@ -54,7 +54,13 @@ public class Veld extends JPanel {
 
     public void addPunt() {
 
-        punten.add(new Punt());
+        punten.add(new Point());
+        int z = 0;
+
+
+    }
+
+    public void paintPunten() {
         int z = 0;
         while (z < punten.size()) {
             punten.get(z).setLayout(null);
@@ -66,7 +72,6 @@ public class Veld extends JPanel {
         z = 0;
         this.validate();
         this.repaint();
-
     }
 
 }

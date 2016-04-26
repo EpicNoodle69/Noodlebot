@@ -16,14 +16,14 @@ import javax.swing.JPanel;
  *
  * @author Wachtwoordloos
  */
-public class Punt extends JComponent {
+public class Point extends JComponent {
 
     private int x;
     private int y;
     private int middleX;
     private int middleY;
 
-    public Punt() {
+    public Point() {
         int z = 0;
         while (z == 0) {
         this.x = (int) (Math.random() * 400);

@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scherm main = new Scherm();
+        Frame main = new Frame();
 
     }
 

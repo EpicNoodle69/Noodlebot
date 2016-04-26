@@ -9,19 +9,19 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Scherm extends JFrame implements ActionListener {
+public class Frame extends JFrame implements ActionListener {
 
-    private Veld Bruteforce;
-    private Veld Greedy;
-    private Veld Noodler;
+    private Field Bruteforce;
+    private Field Greedy;
+    private Field Noodler;
     private int Spacing;
     private JButton Generate;
 
-    public Scherm() {
+    public Frame() {
         FlowLayout Layout = new FlowLayout();
-        Bruteforce = new Veld();
-        Greedy = new Veld();
-        Noodler = new Veld();
+        Bruteforce = new Field();
+        Greedy = new Field();
+        Noodler = new Field();
         JFrame Scherm = new JFrame();
         Generate = new JButton("Genereer");
         Spacing = 75;
@@ -50,9 +50,7 @@ public class Scherm extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         int x = 0;
         while (x < 60) {
-        Bruteforce.addPunt();
-        Greedy.addPunt();
-            Noodler.addPunt();
+
             x++;
         }
     }
