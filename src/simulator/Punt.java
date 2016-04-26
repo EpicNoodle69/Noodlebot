@@ -24,9 +24,13 @@ public class Punt extends JComponent {
     private int middleY;
 
     public Punt() {
-
-        this.x = (int) (Math.random() * 350);
-        this.y = (int) (Math.random() * 350);
+        int z = 0;
+        while (z == 0) {
+        this.x = (int) (Math.random() * 400);
+            this.y = (int) (Math.random() * 400);
+                z++;
+            }
+        }
         y = y / 50;
         y = (int) Math.round(y);
         y = y * 50;

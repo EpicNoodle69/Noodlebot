@@ -48,12 +48,13 @@ public class Scherm extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-
-
+        int x = 0;
+        while (x < 60) {
         Bruteforce.addPunt();
         Greedy.addPunt();
-        Noodler.addPunt();
-
+            Noodler.addPunt();
+            x++;
+        }
     }
 
 }

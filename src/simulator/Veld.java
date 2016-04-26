@@ -47,6 +47,9 @@ public class Veld extends JPanel {
             x = x + 50;
 
         }
+        g.setColor(Color.CYAN);
+        g.fillOval(10, 360, 30, 30);
+
     }
 
     public void addPunt() {
