@@ -20,13 +20,13 @@ public class Field extends JPanel {
     private int sizeX;
     private int sizeY;
     private int puntId;
-    private ArrayList<Point> punten;
+    private ArrayList<Point> points;
 
     public Field() {
         this.sizeX = 400;
         this.sizeY = 400;
         this.setPreferredSize(new Dimension(sizeX, sizeY));
-        punten = new ArrayList<>();
+        points = new ArrayList<>();
     }
 
     public void paintComponent(Graphics g) {
@@ -52,21 +52,21 @@ public class Field extends JPanel {
 
     }
 
-    public void addPunt() {
+    public void addPoint() {
 
-        punten.add(new Point());
+        points.add(new Point());
         int z = 0;
 
 
     }
 
-    public void paintPunten() {
+    public void paintPoints() {
         int z = 0;
-        while (z < punten.size()) {
-            punten.get(z).setLayout(null);
-            punten.get(z).setPreferredSize(new Dimension(50, 50));
-            punten.get(z).setBounds(getX(), getY(), 25, 25);
-            this.add(punten.get(z));
+        while (z < points.size()) {
+            points.get(z).setLayout(null);
+            points.get(z).setPreferredSize(new Dimension(50, 50));
+            points.get(z).setBounds(getX(), getY(), 25, 25);
+            this.add(points.get(z));
             z++;
         }
         z = 0;

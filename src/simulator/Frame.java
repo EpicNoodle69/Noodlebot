@@ -22,28 +22,28 @@ public class Frame extends JFrame implements ActionListener {
         Bruteforce = new Field();
         Greedy = new Field();
         Noodler = new Field();
-        JFrame Scherm = new JFrame();
+        JFrame Frame = new JFrame();
         Generate = new JButton("Genereer");
         Spacing = 75;
 
-        Scherm.setSize(1500, 600);
-        Scherm.setLayout(Layout);
+        Frame.setSize(1500, 600);
+        Frame.setLayout(Layout);
 
-        Scherm.add(Bruteforce);
-        Scherm.setVisible(true);
+        Frame.add(Bruteforce);
+        Frame.setVisible(true);
         Layout.setHgap(Spacing);
-        Scherm.add(Greedy);
-        Scherm.setVisible(true);
+        Frame.add(Greedy);
+        Frame.setVisible(true);
         Layout.setHgap(Spacing);
-        Scherm.add(Noodler);
-        Scherm.add(Generate);
+        Frame.add(Noodler);
+        Frame.add(Generate);
         Generate.addActionListener(this);
 
         Generate.setVisible(true);
-        Scherm.setVisible(true);
-        Scherm.setTitle("TSP Simulator");
+        Frame.setVisible(true);
+        Frame.setTitle("TSP Simulator");
 
-        Scherm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
 
